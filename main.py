@@ -32,6 +32,7 @@ async def on_ready():
 async def main():
     async with bot:
         await bot.load_extension("cogs.mcmodels_commands")
+        await bot.load_extension("cogs.mcmodels_purchases")
         await bot.load_extension("cogs.admin_commands")
         await bot.load_extension("cogs.user_commands")
         await bot.start(token)
